@@ -1,13 +1,26 @@
-/* styles.scss */
-
 .mat-toolbar {
-  position: relative;
+  background-color: #2196f3;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  margin: 0 10px; /* Add some margin for spacing between tabs */
+}
+
+a.active {
+  background-color: #1565c0;
 }
 
 .spacer {
-  flex: 1 1 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-.active {
-  color: accent;
+.mat-toolbar a {
+  cursor: pointer;
 }

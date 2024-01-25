@@ -1,11 +1,14 @@
 <!-- navigation-bar.component.html -->
-
 <mat-toolbar color="primary">
-  <div fxHide.lt-md="true"> <!-- Hide on small screens -->
-    <span class="spacer"></span>
+  <div fxLayout="row" fxLayoutAlign="center center">
     <a routerLink="/employees" routerLinkActive="active">Employees</a>
     <a routerLink="/programs" routerLinkActive="active">Programs</a>
     <a routerLink="/cost" routerLinkActive="active">Cost</a>
-    <span class="spacer"></span>
+    <!-- Add the Pay tab conditionally based on user login -->
+    <ng-container *ngIf="isLoggedIn">
+      <a routerLink="/pay" routerLinkActive="active">Pay</a>
+    </ng-container>
   </div>
 </mat-toolbar>
+
+
