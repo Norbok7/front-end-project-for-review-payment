@@ -1,0 +1,13 @@
+/* styles.scss */
+
+.mat-toolbar {
+  position: relative;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.active {
+  color: accent;
+}

@@ -1,0 +1,23 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  background-color: transparent; /* Remove background color */
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.graphic-container {
+  flex-grow: 3; /* Take up 2/3 of the available space */
+  text-align: center; /* Center the content */
+}
+
+.graphic-container img {
+  max-width: 100%; /* Adjust the width to make it a little wider */
+  height: auto;
+}
